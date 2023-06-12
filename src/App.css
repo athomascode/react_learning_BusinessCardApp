@@ -1,38 +1,136 @@
 .App {
-  text-align: center;
+  background-color: #23252C;
+  display: flex;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.business-card-section {
+  display: flex;
+  flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Media Query for PC */
+@media (min-width: 768px) {
+  .business-card-section {
+    width: 30%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header-section {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.user-image {
+  min-width: 99%;
+  min-height: 100%;
+}
+
+.main-section {
+  background-color: #1A1B21;
+  text-align: justify;
+  padding: 10px 20px 10px 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h3 {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 0.2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h4 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 50%;
+}
+
+h5 {
+  font-size: 13px;
+  font-weight: 400;
+  color: #F3BF99;
+  text-align: center;
+  line-height: 0.5;
+}
+
+h6 {
+  font-size: 11px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 150%;
+}
+
+p {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 150%;
+}
+
+.social-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 35px;
+}
+
+.social-wrapper-elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+}
+
+.email-button {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 40%;
+  text-align: center;
+}
+
+.social-image {
+  width: 15px;
+  height: 15px;
+  padding-right: 2px;
+}
+
+.email-text {
+  font-weight: 600;
+  font-size: 14px;
+  color: #374151;
+}
+
+.linkedin-text {
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+}
+
+.linkedin-button {
+  background-color: #5093E2;
+  border: 1px solid #5093E2;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 40%;
+  text-align: center;
+}
+
+.footer-section {
+  background-color: #161619;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.footer-image {
+  min-width: 40px;
+  height: auto;
+  object-fit: none;
+  padding-left: 5px;
 }
